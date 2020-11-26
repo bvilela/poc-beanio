@@ -37,6 +37,11 @@ public class Carro {
 		this.observacao = obs;
 	}
 	
+	@Override
+	public String toString() {
+		return "Carro [id: " + id + ", marca: " + marca + ", modelo: " + modelo + ", cor: " + cor 
+				+ ", dataFabricacao: " + dataFabricacao.toString() + ", observacao: " + observacao  + "]";
+	}
 
 	public int getId() {
 		return id;
