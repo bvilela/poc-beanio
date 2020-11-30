@@ -15,6 +15,12 @@ public class Pessoa {
 	@Field(at = 2, required = true)
 	private int idade;
 	
+	@Override
+	public String toString() {
+//		return "Pessoa [id: " + id + ", nome: " + nome + ", idade: " + idade + "]";
+		return nome;
+	}
+	
 	public Pessoa() {}
 	
 	public Pessoa(int id, String nome, int idade) {

@@ -1,4 +1,4 @@
-package br.com.beanio.main;
+package br.com.beanio.dao;
 
 import java.util.ArrayList;
 import java.util.List;

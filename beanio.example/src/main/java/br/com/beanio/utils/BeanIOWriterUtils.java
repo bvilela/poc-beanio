@@ -11,6 +11,8 @@ import org.beanio.builder.FixedLengthParserBuilder;
 import org.beanio.builder.StreamBuilder;
 import org.beanio.builder.XmlParserBuilder;
 
+import CustomTypeHandlers.CTHExtinto;
+
 public abstract class BeanIOWriterUtils {
 	private static final String STREAM_BUILDER_NAME = "Writer";
 		
@@ -63,8 +65,9 @@ public abstract class BeanIOWriterUtils {
         // @formatter:off
         StreamBuilder builder = new StreamBuilder(STREAM_BUILDER_NAME)
         	    .format(Utils.FORMAT_XML)
-        	    .parser(new XmlParserBuilder())
+        	    .parser(new XmlParserBuilder().indent(4)) //seta indentação de 4 caracteres 
                 .addRecord(classRecord)
+                .addTypeHandler("CTHExtinto", new CTHExtinto())
                 .writeOnly()
                 .strict();
         // @formatter:on
