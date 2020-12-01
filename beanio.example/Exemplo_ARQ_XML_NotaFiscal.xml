@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Writer>
+    <NotaFiscal>
+        <pessoa>
+            <id>1</id>
+            <nome>Jose</nome>
+            <idade>45</idade>
+        </pessoa>
+        <produtos>
+            <produto>
+                <codProd>00001</codProd>
+                <descricao xmlns="descricaoProd.">Mouse...............</descricao>
+                <valor>50.0</valor>
+            </produto>
+            <produto>
+                <codProd>00002</codProd>
+                <descricao xmlns="descricaoProd.">Teclado.............</descricao>
+                <valor>120.0</valor>
+            </produto>
+        </produtos>
+        <dataCompra>2020-12-01</dataCompra>
+    </NotaFiscal>
+    <NotaFiscal>
+        <pessoa>
+            <id>2</id>
+            <nome>Vitor</nome>
+            <idade>25</idade>
+        </pessoa>
+        <produtos>
+            <produto>
+                <codProd>00001</codProd>
+                <descricao xmlns="descricaoProd.">Caixa de Som........</descricao>
+                <valor>150.0</valor>
+            </produto>
+            <produto>
+                <codProd>00002</codProd>
+                <descricao xmlns="descricaoProd.">Monitor.............</descricao>
+                <valor>800.9</valor>
+            </produto>
+            <produto>
+                <codProd>00003</codProd>
+                <descricao xmlns="descricaoProd.">Suporte Notebook....</descricao>
+                <valor>45.5</valor>
+            </produto>
+        </produtos>
+        <dataCompra>2020-12-01</dataCompra>
+    </NotaFiscal>
+</Writer>

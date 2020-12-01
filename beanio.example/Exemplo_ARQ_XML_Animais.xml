@@ -1,31 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Writer>
-    <animal dataCriacao="2020-11-30">
+    <animal dataCriacao="2020-12-01">
         <AnimalCodigo>00001</AnimalCodigo>
         <nome xmlns="AnimalNameSpace">Gato******</nome>
         <extinto>NÃO</extinto>
     </animal>
-    <animal dataCriacao="2020-11-30">
+    <animal dataCriacao="2020-12-01">
         <AnimalCodigo>00002</AnimalCodigo>
         <nome xmlns="AnimalNameSpace">Cachorro**</nome>
         <extinto>NÃO</extinto>
     </animal>
-    <animal dataCriacao="2020-11-30">
+    <animal dataCriacao="2020-12-01">
         <AnimalCodigo>00003</AnimalCodigo>
         <nome xmlns="AnimalNameSpace">Urso******</nome>
         <extinto>NÃO</extinto>
     </animal>
-    <animal dataCriacao="2020-11-30">
+    <animal dataCriacao="2020-12-01">
         <AnimalCodigo>00004</AnimalCodigo>
         <nome xmlns="AnimalNameSpace">Elefante**</nome>
         <extinto>NÃO</extinto>
     </animal>
-    <animal dataCriacao="2020-11-30">
+    <animal dataCriacao="2020-12-01">
         <AnimalCodigo>00005</AnimalCodigo>
         <nome xmlns="AnimalNameSpace">Tigre*****</nome>
         <extinto>NÃO</extinto>
     </animal>
-    <animal dataCriacao="2020-11-30">
+    <animal dataCriacao="2020-12-01">
         <AnimalCodigo>00006</AnimalCodigo>
         <nome xmlns="AnimalNameSpace">Mamute****</nome>
         <extinto>SIM</extinto>

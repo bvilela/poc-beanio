@@ -8,6 +8,7 @@ import org.beanio.StreamFactory;
 import br.com.beanio.model.Animal;
 import br.com.beanio.model.Carro;
 import br.com.beanio.model.Cidade;
+import br.com.beanio.model.NotaFiscal;
 import br.com.beanio.model.Time;
 import br.com.beanio.utils.BeanIOReaderUtils;
 import br.com.beanio.utils.FileReaderDecode;
@@ -81,6 +82,24 @@ public class FileReader {
 		}
 		for (Animal animal: animais) {
 			System.out.println(animal);
+		}
+	}
+
+	public void readerXMLExample2() throws Exception {
+		System.out.println("");
+		System.out.println("");
+		System.out.println("XML Example 2...");
+		
+		StreamFactory streamFactory = BeanIOReaderUtils.getStreamFactoryXML(NotaFiscal.class, "Writer");
+		File file = new File(Utils.NAME_ARQ_XML_NOTA_FISCAL);
+		List<NotaFiscal> notaFiscal = new FileReaderDecodeXML<NotaFiscal>().getLista(streamFactory, file, "Writer");
+		
+		if (notaFiscal == null || notaFiscal.isEmpty()) {
+			System.out.println("Lista Vazia!");
+		}
+		for (NotaFiscal nf: notaFiscal) {
+			System.out.println(nf.getPessoa().getNome() + " Data Compra: " + Utils.getDataAsIntYYYY_barra_MM_barra_DD(nf.getDataCompra()) 
+				+  " - Produtos: " + nf.getProdutos().getProdutos());
 		}
 	}
 }

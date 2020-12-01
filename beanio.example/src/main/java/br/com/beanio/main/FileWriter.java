@@ -7,10 +7,12 @@ import org.beanio.StreamFactory;
 import br.com.beanio.dao.AnimalDAO;
 import br.com.beanio.dao.CarroDAO;
 import br.com.beanio.dao.CidadeDAO;
+import br.com.beanio.dao.NotaFiscalDAO;
 import br.com.beanio.dao.TimeDAO;
 import br.com.beanio.model.Animal;
 import br.com.beanio.model.Carro;
 import br.com.beanio.model.Cidade;
+import br.com.beanio.model.NotaFiscal;
 import br.com.beanio.model.Time;
 import br.com.beanio.utils.BeanIOWriterUtils;
 import br.com.beanio.utils.Utils;
@@ -55,5 +57,15 @@ public class FileWriter {
 		List<Animal> animais = new AnimalDAO().getListaMock();
 		StreamFactory streamFactory = BeanIOWriterUtils.getStreamFactoryXML(Animal.class);
 		BeanIOWriterUtils.writer(animais, streamFactory, Utils.NAME_ARQ_XML_ANIMAIS);
+	}
+
+	public void writerXMLExample2() {
+		System.out.println("");
+		System.out.println("");
+		System.out.println("XML Example 2...");
+		
+		List<NotaFiscal> notaFiscal = new NotaFiscalDAO().getListaMock();
+		StreamFactory streamFactory = BeanIOWriterUtils.getStreamFactoryXML(NotaFiscal.class);
+		BeanIOWriterUtils.writer(notaFiscal, streamFactory, Utils.NAME_ARQ_XML_NOTA_FISCAL);
 	}
 }

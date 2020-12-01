@@ -78,7 +78,6 @@ public abstract class BeanIOWriterUtils {
 	}
 	
 	public static void writer(List<?> list, StreamFactory streamFactory, String path) {
-		
 		if (list == null || list.isEmpty()) {
 			System.out.println("Lista Vazia!");
 			return;

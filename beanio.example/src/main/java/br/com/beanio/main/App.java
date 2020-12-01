@@ -13,12 +13,14 @@ public class App {
 		fileWriter.writerCSVExample2();
 		fileWriter.writerDelimitedLengthExample1();
 		fileWriter.writerXMLExample1();
+		fileWriter.writerXMLExample2();
 
 		System.out.println("Lendo Arquivos de Exemplo...");
 		fileReader.readerCSVExample1();
 		fileReader.readerCSVExample2();
 		fileReader.readerDelimitedLengthExample1();
 		fileReader.readerXMLExample1();
+		fileReader.readerXMLExample2();
 		
 		System.out.println("Fim");
 	}
