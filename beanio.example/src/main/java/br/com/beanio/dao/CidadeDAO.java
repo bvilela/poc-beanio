@@ -15,7 +15,7 @@ public class CidadeDAO {
 		moradores1.add(new Pessoa(1, "Joao", 44));
 		moradores1.add(new Pessoa(2, "Maria", 39));
 		moradores1.add(new Pessoa(3, "Jose", 51));
-		Cidade cid1 = new Cidade("Taquaritinga", "SP", "Pequena", moradores1);
+		Cidade cid1 = new Cidade("Campinas", "SP", "Grande", moradores1);
 		
 		List<Pessoa> moradores2 = new ArrayList<>();
 		moradores2.add(new Pessoa(1, "Paulo", 31));
@@ -23,7 +23,7 @@ public class CidadeDAO {
 		moradores2.add(new Pessoa(3, "Bruno", 23));
 		moradores2.add(new Pessoa(4, "Andre", 22));
 		moradores2.add(new Pessoa(5, "Lucas", 18));
-		Cidade cid2 = new Cidade("Matao", "SP", "Media", moradores2);
+		Cidade cid2 = new Cidade("Caldas Novas", "GO", "Media", moradores2);
 		
 		lista.add(cid1);
 		lista.add(cid2);
